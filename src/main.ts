@@ -1,14 +1,12 @@
-// types
+/* chapter 4 */
 
-type Footballer = {
-	position: string;
-	club: string;
-	age?: number;
-};
-//you can mentiion optional proper by appending "?" at the end of the property
+//enums
 
+enum RankingsEPL {
+	Arsenal,
+	Liverpool,
+	City,
+	Villa,
+}
 
-const arsenalWinger: Footballer = {
-	position: "rw",
-	club: "arsenal",
-};
+console.log("NumberOneRankGoes to :", RankingsEPL.Arsenal);

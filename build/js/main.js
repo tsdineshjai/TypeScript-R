@@ -1,7 +1,11 @@
 "use strict";
-// types
-//you can mentiion optional proper by appending "?" at the end of the property
-const arsenalWinger = {
-    position: "rw",
-    club: "arsenal",
-};
+/* chapter 4 */
+//enums
+var RankingsEPL;
+(function (RankingsEPL) {
+    RankingsEPL[RankingsEPL["Arsenal"] = 0] = "Arsenal";
+    RankingsEPL[RankingsEPL["Liverpool"] = 1] = "Liverpool";
+    RankingsEPL[RankingsEPL["City"] = 2] = "City";
+    RankingsEPL[RankingsEPL["Villa"] = 3] = "Villa";
+})(RankingsEPL || (RankingsEPL = {}));
+console.log("NumberOneRankGoes to :", RankingsEPL.Arsenal);
